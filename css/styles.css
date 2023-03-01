@@ -1,13 +1,12 @@
 body {
-  font-family: "Roboto"; sans-serif;
-  color: #2E2F42;
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
 }
 
 :root {
-  --primiory-text-color: #2E2F42;
+  --primiory-text-color: #2e2f42;
   --secondary-text-color: #434455;
-  --blue-text-color: #4D5AE5;
-
+  --blue-text-color: #4d5ae5;
 }
 
 .list {
@@ -17,132 +16,134 @@ body {
   text-decoration: none;
 }
 
-
-
-
 /* header */
 
 .logo {
-  font-family: 'Raleway'; sans-serif;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.34;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primiory-text-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.34;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primiory-text-color);
 }
 .heder-nav {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .heder-address {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .heder-link {
   color: var(--primiory-text-color);
 }
 
 .contacts-link {
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
-
-
- /* hero */
+/* hero */
 
 .hero-title {
-  font-family: 'Roboto' sans-serif;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07; 
-/* color: #FFFFFF; */
-text-align: center;
-letter-spacing: 0.02em;
+  font-family: "Roboto" sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  /* color: #FFFFFF; */
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .hero-btn:hover,
 .hero-btn:focus {
- cursor: pointer;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
 
-color: #FFFFFF;
-} 
+  color: #ffffff;
+}
+
 .properties-title {
   font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
-.properties-text{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--secondary-text-color);
+.properties-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
-.primeore-title {
+.team-title,
+.properties-title {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
+/* team */
+.team-names {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
 
-
-
-
-
-
-
-
-
-
-
+.team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
 
 /* portfolio */
 
 .filtr-btn:hover,
-.filtr-btn:focus
- {
-   color: var(--blue-text-color);
+.filtr-btn:focus {
+  color: var(--blue-text-color);
   cursor: pointer;
-  /* background-color: #F4F4FD; */!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  /*  background-color: #F4F4FD; */
 }
 
 .filtr {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 
 .works-title {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--primiory-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primiory-text-color);
 }
 .works-text {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
