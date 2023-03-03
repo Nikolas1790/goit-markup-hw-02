@@ -1,9 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #2e2f42;
-  font-weight: 400;
-}
-
 :root {
   --primiory-text-color: #2e2f42;
   --secondary-text-color: #434455;
@@ -12,6 +6,14 @@ body {
   --grey-cornflower: #f4f4fd;
   --push-btn-portfolio: #404bbf;
   --color-white-fff: #ffffff;
+  --color-hero-bckg: #2e2f42;
+  --color-foot-text: #e7e9fc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primiory-text-color);
+  background-color: var(--color-white-fff);
 }
 
 .list {
@@ -20,27 +22,43 @@ body {
 .link {
   text-decoration: none;
 }
-
-/* header */
+/* спрятать заголовок */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*----------- header----------- */
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.34;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primiory-text-color);
 }
+.logo-blue {
+  color: var(--blue-text-color);
+}
+.logo-white {
+  color: var(--grey-cornflower);
+}
 
 .heder-link {
-  color: var(--primiory-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primiory-text-color);
 }
 
 .heder-link:focus,
@@ -48,40 +66,40 @@ body {
   color: var(--push-btn-portfolio);
 }
 
-.contacts-tel,
-.contacts-emeil {
-  color: var(--secondary-text-color);
+.contacts-address {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
-.contacts-emeil:hover,
-.contacts-emeil:focus {
+.contacts-address:hover,
+.contacts-address:focus {
   color: var(--push-btn-portfolio);
 }
 
-/* hero */
+/*---------------- hero ---------------*/
+.hero {
+  background-color: var(--color-hero-bckg);
+}
 
 .hero-title {
-  font-family: "Roboto" sans-serif;
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  /* color: #FFFFFF; */
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--color-white-fff);
 }
 
 .hero-btn {
-  color: #ffffff;
-  background-color: var(--blue-text-color);
+  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
+  color: var(--color-white-fff);
+  background-color: var(--blue-text-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -99,41 +117,55 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.team-title,
+
 .properties-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
 }
 
-/* team */
+/* ------------What are we doing ------------*/
+
+.content-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+/*------------ team --------------*/
+.team {
+  background-color: var(--grey-cornflower);
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
 .team-names {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
 .team-profession {
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+.team-list {
+  background-color: var(--color-white-fff);
+}
 
-/* portfolio */
+/*----------------- portfolio---------------- */
 .filtr {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
-
   position: absolute;
   width: 586px;
   height: 48px;
@@ -141,17 +173,16 @@ body {
   top: 181px;
 }
 .filtr-btn {
-  color: var(--blue-text-color);
-  background-color: var(--grey-cornflower);
+  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
+  color: var(--blue-text-color);
+  background-color: var(--grey-cornflower);
 }
+
 .filtr-btn:hover,
 .filtr-btn:focus {
   color: var(--color-white-fff);
@@ -172,9 +203,15 @@ body {
   color: #434455;
 }
 
-/* footer */
-.logo-text {
+/*------------- footer -----------------*/
+
+.footer {
+  background-color: var(--color-hero-bckg);
+}
+
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--color-foot-text);
 }
