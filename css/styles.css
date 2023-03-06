@@ -9,11 +9,35 @@
   --color-hero-bckg: #2e2f42;
   --color-foot-text: #e7e9fc;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primiory-text-color);
   background-color: var(--color-white-fff);
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .list {
@@ -169,18 +193,7 @@ body {
 }
 
 /*----------------- portfolio---------------- */
-.filtr {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  position: absolute;
-  width: 586px;
-  height: 48px;
-  left: 422px;
-  top: 181px;
-}
+
 .filtr-btn {
   font-family: inherit;
   cursor: pointer;
